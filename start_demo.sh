@@ -55,7 +55,7 @@ echo "✅ Qdrant is running"
 # Setup data
 echo ""
 echo "📊 Setting up demo data..."
-python setup_data.py
+python3 setup_data.py
 
 if [ $? -ne 0 ]; then
     echo "❌ Failed to setup data"

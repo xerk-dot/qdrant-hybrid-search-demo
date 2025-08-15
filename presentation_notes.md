@@ -140,7 +140,7 @@ final_score = (
 docker run -p 6333:6333 qdrant/qdrant
 
 # 2. Setup data (run once)
-python setup_data.py
+python3 setup_data.py
 
 # 3. Start demo
 streamlit run demo_app.py

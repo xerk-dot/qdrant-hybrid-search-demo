@@ -157,7 +157,7 @@ def main():
         print("\n🎉 All tests passed! Demo is ready to run.")
         print("\nNext steps:")
         print("1. Start Qdrant: docker-compose up -d qdrant")
-        print("2. Setup data: python setup_data.py")
+        print("2. Setup data: python3 setup_data.py")
         print("3. Run demo: streamlit run demo_app.py")
     else:
         print(f"\n⚠️ {len(results) - passed} tests failed. Please fix issues before proceeding.")

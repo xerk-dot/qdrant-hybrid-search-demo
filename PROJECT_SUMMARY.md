@@ -173,7 +173,7 @@ streamlit run demo_app.py
 **Next Steps:**
 1. Practice the demo flow with the sample queries
 2. Review `presentation_notes.md` for detailed talking points
-3. Test the verification script: `python verify_setup.py`
+3. Test the verification script: `python3 verify_setup.py`
 4. Schedule your interview with confidence!
 
 **Good luck! You've built something impressive that showcases both Qdrant's capabilities and your technical skills.**
