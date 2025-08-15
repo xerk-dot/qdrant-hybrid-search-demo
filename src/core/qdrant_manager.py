@@ -15,7 +15,7 @@ from qdrant_client.http.models import (
     MatchValue,
     MatchAny
 )
-from config import qdrant_config
+from src.core.config import qdrant_config
 
 logger = logging.getLogger(__name__)
 

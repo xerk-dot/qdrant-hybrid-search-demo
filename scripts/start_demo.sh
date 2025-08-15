@@ -55,7 +55,7 @@ echo "✅ Qdrant is running"
 # Setup data
 echo ""
 echo "📊 Setting up demo data..."
-python3 setup_data.py
+python3 src/data/setup_data.py
 
 if [ $? -ne 0 ]; then
     echo "❌ Failed to setup data"
@@ -66,9 +66,10 @@ echo ""
 echo "🎉 Setup complete!"
 echo ""
 echo "To start the demo:"
-echo "  streamlit run demo_app.py"
+echo "  python3 -m streamlit run src/ui/demo_app.py"
 echo ""
 echo "To stop Qdrant:"
 echo "  docker-compose down"
 echo ""
 echo "Demo will be available at: http://localhost:8501"
+

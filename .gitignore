@@ -59,6 +59,7 @@ logs/
 qdrant_storage/
 
 # Generated data files
+data/
 products.json
 
 # OS

@@ -7,8 +7,8 @@ import plotly.graph_objects as go
 from typing import List, Dict, Any
 import logging
 import json
-from search_engine import get_search_engine, SearchResult
-from config import demo_config, search_config
+from src.core.search_engine import get_search_engine, SearchResult
+from src.core.config import demo_config, search_config
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -162,7 +162,7 @@ def main():
         st.stop()
     
     # Sidebar for filters
-    st.sidebar.header("🎛️ Search Filters")
+    st.sidebar.header("🏛️ Search Filters")
     
     # Get filter options
     filter_options = search_engine.get_filter_options()
@@ -310,3 +310,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

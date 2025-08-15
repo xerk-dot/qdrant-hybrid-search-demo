@@ -5,9 +5,9 @@ from typing import List, Dict, Any, Optional, Tuple
 import re
 from dataclasses import dataclass
 from qdrant_client import QdrantClient
-from embedding_service import get_embedding_service
-from qdrant_manager import QdrantManager
-from config import search_config, demo_config
+from src.core.embedding_service import get_embedding_service
+from src.core.qdrant_manager import QdrantManager
+from src.core.config import search_config, demo_config
 
 logger = logging.getLogger(__name__)
 
@@ -45,18 +45,7 @@ class SearchEngine:
         limit: int = None,
         include_score_breakdown: bool = True
     ) -> List[SearchResult]:
-        """
-        Perform hybrid search combining semantic similarity with structured filtering.
-        
-        Args:
-            query: Search query text
-            filters: Structured filters (category, brand, price range, etc.)
-            limit: Maximum number of results
-            include_score_breakdown: Whether to include detailed scoring information
-            
-        Returns:
-            List of SearchResult objects ranked by relevance
-        """
+        """Perform hybrid search combining semantic similarity with structured filtering."""
         if limit is None:
             limit = search_config.default_limit
             

@@ -137,13 +137,13 @@ final_score = (
 ### **Pre-Demo Checklist:**
 ```bash
 # 1. Start Qdrant
-docker run -p 6333:6333 qdrant/qdrant
+docker-compose up -d qdrant
 
 # 2. Setup data (run once)
-python3 setup_data.py
+python3 src/data/setup_data.py
 
 # 3. Start demo
-streamlit run demo_app.py
+python3 -m streamlit run src/ui/demo_app.py
 ```
 
 ### **Backup Queries** (if demo fails):

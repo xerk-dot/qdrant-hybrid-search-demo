@@ -4,7 +4,7 @@ import logging
 from typing import List, Dict, Any
 import numpy as np
 from sentence_transformers import SentenceTransformer
-from config import embedding_config
+from src.core.config import embedding_config
 
 logger = logging.getLogger(__name__)
 

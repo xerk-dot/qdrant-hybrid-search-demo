@@ -188,3 +188,4 @@ final_score = (
 - Be confident and specific in answers
 - Reference the live demo when possible
 - Acknowledge limitations honestly
+
