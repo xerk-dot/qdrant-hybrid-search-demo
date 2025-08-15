@@ -7,8 +7,8 @@ import plotly.graph_objects as go
 from typing import List, Dict, Any
 import logging
 import json
-from src.core.search_engine import get_search_engine, SearchResult
-from src.core.config import demo_config, search_config
+from ..core.search_engine import get_search_engine, SearchResult
+from ..core.config import demo_config, search_config
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)

@@ -22,7 +22,7 @@ User Query → Embedding Model → Qdrant Vector Search → Custom Scoring → R
 ### Option 1: Automated Setup (Recommended)
 ```bash
 ./scripts/start_demo.sh
-python3 -m streamlit run src/ui/demo_app.py
+streamlit run demo_app.py
 ```
 
 ### Option 2: Manual Setup
@@ -44,12 +44,12 @@ python3 -m streamlit run src/ui/demo_app.py
 
 4. **Setup Demo Data**
    ```bash
-   python3 src/data/setup_data.py
+   python3 setup_data.py
    ```
 
 5. **Launch Demo**
    ```bash
-   python3 -m streamlit run src/ui/demo_app.py
+   streamlit run demo_app.py
    ```
 
 6. **Open Browser**

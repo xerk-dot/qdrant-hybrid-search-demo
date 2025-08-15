@@ -5,9 +5,9 @@ from typing import List, Dict, Any, Optional, Tuple
 import re
 from dataclasses import dataclass
 from qdrant_client import QdrantClient
-from src.core.embedding_service import get_embedding_service
-from src.core.qdrant_manager import QdrantManager
-from src.core.config import search_config, demo_config
+from .embedding_service import get_embedding_service
+from .qdrant_manager import QdrantManager
+from .config import search_config, demo_config
 
 logger = logging.getLogger(__name__)
 
