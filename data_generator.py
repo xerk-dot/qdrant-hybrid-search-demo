@@ -185,7 +185,7 @@ class EcommerceDataGenerator:
             })
             if "laptop" in subcategory.lower():
                 specs.update({
-                    "screen_size": f"{random.choice([13.3, 14, 15.6, 17.3])}\",
+                    "screen_size": f"{random.choice([13.3, 14, 15.6, 17.3])}\"",
                     "ram": f"{random.choice([8, 16, 32])}GB",
                     "storage": f"{random.choice([256, 512, 1024])}GB SSD"
                 })
