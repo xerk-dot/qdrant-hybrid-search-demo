@@ -27,6 +27,10 @@ def initialize_search_engine():
     """Initialize and cache the search engine."""
     return get_search_engine()
 
+# Session state for search query
+if 'search_query' not in st.session_state:
+    st.session_state.search_query = ""
+
 def format_price(price: float) -> str:
     """Format price for display."""
     return f"${price:,.2f}"
@@ -212,6 +216,7 @@ def main():
     with col1:
         search_query = st.text_input(
             "Enter your search query:",
+            value=st.session_state.search_query,
             placeholder="e.g., comfortable running shoes, gaming laptop under $1000, wireless headphones",
             help="Try natural language queries! The system understands price ranges, categories, and product features."
         )
@@ -220,7 +225,7 @@ def main():
         st.write("**Try these examples:**")
         for i, example in enumerate(demo_config.sample_queries[:4]):
             if st.button(example, key=f"example_{i}"):
-                search_query = example
+                st.session_state.search_query = example
                 st.rerun()
     
     # Build filters dictionary
