@@ -23,8 +23,8 @@ class EmbeddingConfig:
 @dataclass
 class SearchConfig:
     """Search and scoring configuration."""
-    default_limit: int = 20
-    similarity_threshold: float = 0.6
+    default_limit: int = 15
+    similarity_threshold: float = 0.3
     
     # Scoring weights for hybrid search
     semantic_weight: float = 0.7

@@ -29,7 +29,7 @@ streamlit run demo_app.py
 
 1. **Verify Prerequisites**
    ```bash
-   python verify_setup.py
+   python3 verify_setup.py
    ```
 
 2. **Install Dependencies**
@@ -44,7 +44,7 @@ streamlit run demo_app.py
 
 4. **Setup Demo Data**
    ```bash
-   python setup_data.py
+   python3 setup_data.py
    ```
 
 5. **Launch Demo**
